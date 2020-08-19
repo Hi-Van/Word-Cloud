@@ -26,7 +26,7 @@ function WordCloud() {
 
     return (
         <div className="content-wrapper">
-            <div className="title"><span role="img" aria-label="cloud" style={ {fontSize: '3rem' , textAlign: 'center', margin: '.8rem'} }>💭</span> <h1>CLOUDY <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0&secondary.color=F44336&primary.color=3F51B5" target="_blank" rel="noopener noreferrer">By Van S.</a></h1> </div>
+            <div className="title"><span role="img" aria-label="cloud" style={ {fontSize: '4rem' , textAlign: 'center', margin: '.8rem' , color: 'white'} }>☁</span> <h1>CLOUDY <a href="https://twitter.com/Hi_Im_Van" target="_blank" rel="noopener noreferrer">By Van S.</a></h1> </div>
 
             <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="center" style={{ marginTop: '10rem' }}>
                 <form className="search" onSubmit={handleSubmit}> <input type="text" placeholder="Copy Paste Text.." id="inputText" className="input" /> </form>
