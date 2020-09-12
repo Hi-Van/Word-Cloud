@@ -29,7 +29,7 @@ function WordCloud() {
             <div className="title"><span role="img" aria-label="cloud" style={ {fontSize: '4rem' , textAlign: 'center', margin: '.8rem' , color: 'white'} }>☁</span> <h1>CLOUDY <a href="https://twitter.com/Hi_Im_Van" target="_blank" rel="noopener noreferrer">By Van S.</a></h1> </div>
 
             <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="center" style={{ marginTop: '10rem' }}>
-                <form className="search" onSubmit={handleSubmit}> <input type="text" placeholder="Copy Paste Text.." id="inputText" className="input" /> </form>
+                <form className="search" onSubmit={handleSubmit}> <input type="text" placeholder="Copy Paste Text.." id="inputText" className="input" autocomplete="off" /> </form>
                 <Button onClick={handleSubmit} variant="contained" size="large" style={{ margin: '20px' }} color='primary' disableElevation>Go!</Button>
             </Box>
 
