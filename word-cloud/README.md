@@ -1,4 +1,4 @@
-# [Cloudy](https://cloudy-word-cloud.herokuapp.com/)
+# MIPS Basics
 
 
 Table of Contents
@@ -11,7 +11,7 @@ Table of Contents
         * [Functions](#Functions)
         * [Memory](#Memory)
         * [Reserved](#Reserved)
-      * [System Call Operations](#System)
+      * [System Call Operations](#System_Call_Operations)
         
 
 
