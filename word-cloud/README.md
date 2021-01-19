@@ -8,7 +8,10 @@ Table of Contents
       * [Registers](#Registers)
         * [Mnemonics](#Mnemocis)
         * [Generic](#Generic)
-        * [Function](#Function)
+        * [Functions](#Functions)
+        * [Memory](#Memory)
+        * [Reserved](#Reserved)
+      * [System Call Operations](#System)
         
 
 
@@ -68,6 +71,24 @@ Table of Contents
 | Register     | Purpose | Saved? |
 | ----------- | ----------- | --- |
 | $s0-$s7 | saved registers | Calle Saved |
-| $a0-$a3 | arguement registers |
-| $v0-$v1 | return values |
-| $ra | return address |
+| $a0-$a3 | arguement registers | N/A |
+| $v0-$v1 | return values | N/A |
+| $ra | return address | N/A |
+
+### Memory
+
+| Register     | Purpose | Explanations |
+| ----------- | ----------- | --- |
+| $gp | global pointer | manages the heap |
+| $fp | frame pointer | marks the beginning of our memory block within the stack |
+| $sp | stack pointer | holds local variables, saved registers that are overwritten, and marks the end of the memory block |
+
+
+### Reserved
+
+| Register     | Purpose | Explanations |
+| ----------- | ----------- | --- |
+| $at | assembler temporary | expands psuedo instruction to machine code instructions |
+| $k0-$k1 | Kernel registers | reserved for the OS kernel |
+
+# System Call Operations
