@@ -36,7 +36,7 @@ $ npm start
 
 This component is the header at the top of the application. The header simply displays the application name and link to a twitter profile. It was written using a few lines of code and appears under the class name ```title```:
 
-```
+```html
   <div className="title">
   
     <span role="img" aria-label="cloud" 
@@ -61,7 +61,7 @@ This component is the header at the top of the application. The header simply di
 This component page relies on the amCharts 4 dependencies, both can be imported as ```import * as am4core from "@amcharts/amcharts4/core";``` and ```
 import * as am4plugins_wordCloud from "@amcharts/amcharts4/plugins/wordCloud";``` It follows the [example](https://www.amcharts.com/demos/word-cloud/) of a word cloud from the amCharts 4 Library, with slight modifications in order to take input from the user:
 
-```
+```javascript
     am4core.useTheme(am4themes_animated);
     var chart = am4core.create(
         'chartdiv',
@@ -74,7 +74,7 @@ import * as am4plugins_wordCloud from "@amcharts/amcharts4/plugins/wordCloud";``
 ```
 
 The component can be rendered as:
-```
+```javascript
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4plugins_wordCloud from "@amcharts/amcharts4/plugins/wordCloud";
 
@@ -105,7 +105,7 @@ export default App;
 
 This component is a from that accepts the users input text to generate a word cloud. It uses react hooks in order to update the query and material UI button for handling submissions:
 
-```
+```javascript
 import { Button, Box } from '@material-ui/core';
 import { useState } from 'react';
 
